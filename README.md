@@ -22,6 +22,7 @@ The website should:
 
 - For my layout I wrote all the markup following a traditonal 12 column grid like how bootstrap uses theirs.
 - My Hero section has the random background image generated using a random number.
+- I had to change the name of the hero background images by adding a hyphon between the spaces. Jquery was not showing the images unless I made this change.
 - I placed my text inside its own div which I labled "Hero Content", I positioned it using flexbox alignments.
 - The text header formats was complicated but I managed To get it to look as close as possible to the mock up using viewport width on the font size.
 - Moving on to my main section I have two six column containers
