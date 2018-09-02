@@ -22,6 +22,4 @@ $(document).ready(function() {
       $(".description").addClass("fadeInUp");
     }
   });
-
-  console.log(bgImage);
 });
