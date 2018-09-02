@@ -1,10 +1,180 @@
-@import 'variables'
+@import variables
 
+*
+	padding: 0
+	margin: 0
+	box-sizing: border-box
 
-// Delete Me and Good Luck!
 body
+	width: 100%
+	height: 100%
+	font-family: 'Montserrat'
+
+	.fluid-container
+		width: 100%
+
+	.row
+		display: flex
+		flex-wrap: wrap
+
+	.col-row-12
+		flex: 0 0 100%
+		max-width: 100%
+
+	.col-row-8 
+		flex: 0 0 66.6666%
+		max-width: 66.6666%
+
+	.col-row-7 
+		flex: 0 0 58.8888%
+		max-width: 58.8888%
+	
+	.col-row-6 
+		flex: 50%
+		max-width: 50%
+		height: auto !important
+		overflow: hidden
+	
+	.col-row-5
+		flex: 0 0 41.1111%
+		max-width: 41.1111%
+
+	.col-row-4 
+  	flex: 0 0 33.3333%
+  	max-width: 33.3333%
+
+// hero
+
+.hero 
+	display: flex
 	height: 100vh
-	display: flex 
-	align-items: center 
-	justify-content: center 
+	width: 100%
+	background-size: cover
 	text-align: center
+	align-items: center
+	justify-content: center
+	color: $white
+
+	.hero-content
+		width: 50%
+
+		h1 
+			text-transform: uppercase
+			font-size: 4vw
+  			font-weight: bold
+
+		.color
+			font-size: 6.5vw
+			color: $red
+		
+		p 
+			margin-top: 20px
+
+.divider 
+	position: relative
+	z-index: -1
+	height: 50px
+	width: 100%
+	background-color: $red
+	margin-bottom: 5px
+
+main 
+	display: flex
+	position: relative
+
+	.video-container
+		position: absolute
+		top: -50%
+		left: 50%
+		transform: translate(-50%, 0)
+		width: 40%
+		z-index: 5
+		box-shadow: 1px 10px 20px rgba(0,0,0,.5)
+
+		.video-wrapper
+			position: relative
+			padding-bottom: 56.25%
+			padding-top: 25px
+			height: 0
+
+			iframe
+				position: absolute
+				top: 0
+				right: 0
+				bottom: 0
+				height: 100%
+				width: 100%
+
+	img 
+		width: 100%
+		height: 100%
+		vertical-align: middle
+
+	.images-2-container 
+		display: flex
+		flex-direction: column
+		align-content: center
+
+		img 
+			height: auto !important
+	
+	.img-1
+		padding-bottom: 5px
+		visibility: hidden
+
+	.img-2
+		padding: 35% 0 5px 5px
+		visibility: hidden
+	
+	.img-3
+		width: 70%
+		padding-left: 5px
+		visibility: hidden
+
+	.img-4 
+		padding-left: 5px
+		visibility: hidden
+
+	.img-5
+		visibility: hidden
+
+	.details
+		display: flex
+		align-items: center
+		padding-left: 2.5em
+
+		.details-content
+			flex: 0 0 100%
+	
+		.title
+			visibility: hidden
+
+			h1, h3
+				text-transform: uppercase
+	
+			h1
+				color: $red
+	
+		.description
+			visibility: hidden
+
+			p 
+				margin-bottom: 10px
+				width: 80%
+	
+			p:nth-of-type(3)
+				color: $red
+				font-weight: bold
+
+		hr 
+			margin: 10px 0
+			height: 5px
+			background-color: $black
+			visibility: hidden
+
+.fadeInDown,
+.fadeInUp,
+.fadeInLeft,
+.fadeInRight
+	visibility: visible !important
+	animation-duration: 1.5s
